@@ -6,7 +6,7 @@ const list = [
   { name: 'Home', url: '/' },
   { name: 'Chi siamo', url: '/chi-siamo' },
   { name: 'Catalogo', url: '/catalogo' },
-  { name: 'Il vivaio', url: '/vivaio' },
+  { name: 'Il vivaio', url: '/il-vivaio' },
   { name: 'Contatti', url: '/contatti' },
 ];
 

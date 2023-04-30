@@ -1,3 +1,5 @@
+import { address, cellNum, pIVA, tellNum } from '@/config/config';
+
 const Footer = () => {
   return (
     <div className="bg-[#13961c] w-full">
@@ -7,18 +9,18 @@ const Footer = () => {
           <div className="mb-[10px]">
             <strong>Pantelflora di Guida Giuseppe</strong>
             <br />
-            Via Bue Marino
+            {address}
             <br />
             91017 - Pantelleria
             <br />
             Trapani - Italia
           </div>
           <div>
-            C.F. / P.Iva: 0845835460486405
+            C.F. / P.Iva: {pIVA}
             <br />
-            Tel: 092390294850
+            Tel: {tellNum}
             <br />
-            Fax: 968546846945684
+            Cell: {cellNum} (Michael)
             <br />
             info@pantelflora.com
           </div>

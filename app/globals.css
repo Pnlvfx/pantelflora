@@ -28,7 +28,7 @@ h1 {
 
 .fill {
   width: 100%;
-  height: 100%;
+  height: 600px;
   background-position: center;
   background-size: cover;
 }

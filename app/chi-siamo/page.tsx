@@ -3,7 +3,7 @@ import Carousel from '@/components/images/Carousel';
 const Page = () => {
   return (
     <div>
-      <Carousel images={['/chi-siamo.jpg']} height={250} />
+      <Carousel images={['/chi-siamo.jpg']} height={400} />
       <div className="my-[25px]">
         <div className="pt-[20px] pb-[30px]">
           <div className="pr-6 pb-[30px] pl-[10px]">
