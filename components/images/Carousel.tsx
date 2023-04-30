@@ -19,7 +19,7 @@ const Carousel = ({ images, height }: CarouselProps) => {
   }, [images]);
 
   return (
-    <div className="w-full bg-transparent overflow-hidden relative" style={{ height }}>
+    <div className="w-full bg-transparent overflow-hidden relative max-h-[390px] md:max-h-[600px]" style={{ height }}>
       <div className="carousel slide">
         <div className="carousel-inner" style={{ '--iteration-count': banners.length - 1 } as CSSProperties}>
           {images.map((_, index) => (
