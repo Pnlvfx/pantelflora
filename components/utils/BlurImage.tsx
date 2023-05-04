@@ -11,7 +11,7 @@ interface BlurImageProps {
   priority?: boolean;
   unoptimized?: boolean;
   fill?: boolean;
-  className: string;
+  className?: string;
 }
 
 const BlurImage = ({ src, alt, width, height, style, priority, unoptimized, fill, className }: BlurImageProps) => {
