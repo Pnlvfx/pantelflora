@@ -14,7 +14,8 @@ export const metadata = {
     'Pantelflora è un vivaio specializzato nella vendita di piante di alta qualità con sede a Pantelleria. Scopri la nostra vasta selezione di piante, tra cui palme, cactus e piante da frutto.',
   referrer: 'origin-when-cross-origin',
   manifest: process.env.NODE_ENV === 'production' ? `${clientUrl}/site.webmanifest` : undefined,
-  keywords: 'vivaio, piante, Pantelleria, palme, cactus, frutteto, acquisto online',
+  keywords:
+    'vivaio, piante, Pantelleria, palme, cactus, frutteto, acquisto online, vivaio Pantelleria, piante Pantelleria, Pantelflora, vivaio Pantelflora',
   themeColor: '#ffffff',
   applicationName: 'pantelflora',
   appleWebApp: {
