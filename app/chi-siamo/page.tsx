@@ -1,9 +1,12 @@
+import { deviceIsMobile } from '@/components/API/serverConfig';
 import Carousel from '@/components/images/Carousel';
 
 const Page = () => {
+  const isMobile = deviceIsMobile();
+
   return (
     <div>
-      <Carousel images={['/chi-siamo.jpg']} height={400} />
+      <Carousel images={['/chi-siamo.jpg']} height={isMobile ? 220 : 400} />
       <div className="my-[25px]">
         <div className="pt-[20px] pb-[30px]">
           <div className="pr-6 pb-[30px] pl-[10px]">

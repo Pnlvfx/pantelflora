@@ -43,7 +43,7 @@ export const metadata = {
 const RootLayout = ({ children }: ChildrenProps) => {
   return (
     <html lang="it">
-      <body>
+      <body cz-shortcut-listen="true">
         <div className="max-w-[1200px] md:mx-auto">
           <div className="mb-[25px]">
             <Header />

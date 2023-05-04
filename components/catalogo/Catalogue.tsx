@@ -1,6 +1,6 @@
 'use client';
-import Image from 'next/image';
 import Link from 'next/link';
+import BlurImage from '../utils/BlurImage';
 
 const Catalogue = ({ image, i }: { image: string; i: number }) => {
   return (
@@ -12,7 +12,7 @@ const Catalogue = ({ image, i }: { image: string; i: number }) => {
             target="_blank"
             className="cursor-pointer w-full bg-[rgb(49,58,50)] absolute z-[5] inset-0 text-center transition-opacity opacity-0 hover:opacity-60"
           />
-          <Image
+          <BlurImage
             src={image}
             width={260}
             height={200}
@@ -21,7 +21,6 @@ const Catalogue = ({ image, i }: { image: string; i: number }) => {
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
-            className="md:h-[200px] w-full md:w-[260px]"
           />
         </div>
       </div>

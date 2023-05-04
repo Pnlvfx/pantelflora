@@ -3,11 +3,11 @@ import { Logo } from '../utils/Logo';
 
 const Header = () => {
   return (
-    <div className="relative w-full h-[125px] pt-[13px]">
-      <div className="relative h-full overflow-hidden">
-        <div className="w-[920px] ml-10 overflow-y-hidden text-left">
-          <Link href={'/'}>
-            <Logo className="max-h-[125px]" />
+    <div className="w-full h-[125px] md:pt-[13px]">
+      <div className="h-full">
+        <div className="w-full lg:w-[920px] lg:ml-10 text-left">
+          <Link className="overflow-hidden w-full h-full" href={'/'}>
+            <Logo className="max-h-[125px] max-w-[390px]" />
           </Link>
         </div>
       </div>
