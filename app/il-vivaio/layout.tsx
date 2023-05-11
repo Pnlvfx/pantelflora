@@ -1,4 +1,3 @@
-import Menu from '@/components/catalogo/Menu';
 import VivaioMenu from '@/components/vivaio/VivaioMenu';
 import Link from 'next/link';
 

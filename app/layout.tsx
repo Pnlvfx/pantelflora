@@ -28,15 +28,15 @@ export const metadata = {
     apple: `${clientUrl}/apple-touch-icon-180x180.png`,
   },
   authors: [{ name: 'Pantelflora' }],
-  twitter: {
-    card: 'summary',
-  },
-  openGraph: {
-    title: 'Vivaio Pantelflora',
-    description:
-      'Pantelflora è un vivaio specializzato nella vendita di piante di alta qualità con sede a Pantelleria. Scopri la nostra vasta selezione di piante, tra cui palme, cactus e piante da frutto.',
-    siteName: 'pantelflora',
-  },
+  // twitter: {
+  //   card: 'summary',
+  // },
+  // openGraph: {
+  //   title: 'Vivaio Pantelflora',
+  //   description:
+  //     'Pantelflora è un vivaio specializzato nella vendita di piante di alta qualità con sede a Pantelleria. Scopri la nostra vasta selezione di piante, tra cui palme, cactus e piante da frutto.',
+  //   siteName: 'pantelflora',
+  // },
 };
 
 const RootLayout = ({ children }: ChildrenProps) => {
