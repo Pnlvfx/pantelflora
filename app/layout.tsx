@@ -3,6 +3,7 @@ import './globals.css';
 import Header from '@/components/header/Header';
 import Footer from '@/components/header/Footer';
 import { clientUrl } from '@/config/config';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   viewport: {
@@ -55,6 +56,7 @@ const RootLayout = ({ children }: ChildrenProps) => {
             <div className="mb-[25px]" />
             <Footer />
           </div>
+          <Analytics />
         </div>
       </body>
     </html>
