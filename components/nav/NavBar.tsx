@@ -29,9 +29,9 @@ const Button = ({ name, url }: { name: string; url: string }) => {
 
 const NavBar = () => {
   return (
-    <nav className="flex flex-wrap items-center justify-between bg-[#13961c] mt-6">
+    <nav className="flex flex-wrap items-center justify-between bg-[#13961c] mt-10">
       <div className="grow flex items-center w-auto overflow-x-auto">
-        <div className="flex grow items-center justify-between md:mx-10">
+        <div className="flex grow items-center justify-between md:mx-10 py-2">
           {list.map((l, i) => (
             <Button name={l.name} url={l.url} key={i} />
           ))}
