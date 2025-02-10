@@ -27,7 +27,6 @@
     "eslint-plugin-no-inline-styles": "^1.0.5",
     "eslint-plugin-react-compiler": "0.0.0-experimental-a08709b-20250207",
     "eslint-plugin-sonarjs": "^3.0.1",
-    "eslint-plugin-tailwindcss": "^4.0.0-alpha.0",
     "eslint-plugin-unicorn": "^56.0.1",
     "postcss": "8.5.1",
     "tailwindcss": "4.0.6",
