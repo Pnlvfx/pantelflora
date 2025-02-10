@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "unused": "node ./tools/unused.ts",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -17,7 +16,6 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
-    "@goatjs/node": "github:Pnlvfx/goatjs#workspace=@goatjs/node",
     "@tailwindcss/postcss": "^4.0.2",
     "@types/eslint__eslintrc": "^2.1.2",
     "@types/node": "^22.13.0",
