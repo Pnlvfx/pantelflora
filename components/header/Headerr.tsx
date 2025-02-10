@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { Logo } from '../utils/Logoo';
+import { Logo } from '../utils/logo';
 
-const Header = () => {
+export const Header = () => {
   return (
     <div className="w-full h-[125px] md:pt-[13px]">
       <div className="h-full">
@@ -14,5 +14,3 @@ const Header = () => {
     </div>
   );
 };
-
-export default Header;

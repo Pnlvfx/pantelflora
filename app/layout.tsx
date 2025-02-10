@@ -1,9 +1,9 @@
 import './globals.css';
 import type { ReactNode } from 'react';
 import type { Viewport } from 'next';
-import NavBar from '@/components/nav/NavBar';
-import Header from '@/components/header/Header';
-import Footer from '@/components/header/Footer';
+import { NavBar } from '@/components/nav/nav-bar';
+import Header from '@/components/header/Headerr';
+import Footer from '@/components/header/Footerr';
 import { clientUrl } from '@/config/config';
 import { Analytics } from '@vercel/analytics/react';
 

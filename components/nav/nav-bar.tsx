@@ -1,4 +1,4 @@
-import NavButton from "./NavButton";
+import { NavButton } from './nav-button';
 
 const list = [
   { name: 'Home', url: '/' },
@@ -8,7 +8,7 @@ const list = [
   { name: 'Contatti', url: '/contatti' },
 ];
 
-const NavBar = () => {
+export const NavBar = () => {
   return (
     <nav className="flex flex-wrap items-center justify-between bg-[#13961c] mt-10">
       <div className="grow flex items-center w-auto overflow-x-auto">
@@ -21,5 +21,3 @@ const NavBar = () => {
     </nav>
   );
 };
-
-export default NavBar;

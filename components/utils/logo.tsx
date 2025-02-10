@@ -8,6 +8,7 @@ export const Logo = (props: SVGProps<SVGSVGElement>) => {
       width="587.13125px"
       height="121.39999999999999px"
       viewBox="-43.56562500000001 14.300000000000004 587.13125 121.39999999999999"
+      // eslint-disable-next-line no-inline-styles/no-inline-styles
       style={{ background: '0 0' }}
       preserveAspectRatio="xMidYMid"
       {...props}
