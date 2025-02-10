@@ -43,7 +43,7 @@ export const metadata = {
     'piante per terrazzo mare',
     'vivaio specializzato isole',
     'punteruolo rosso Pantelleria',
-    'giariniere Pantelleria',
+    'giardiniere Pantelleria',
     'piante Pantelleria',
     'irrigazione piante',
     'cura delle piante',
@@ -75,11 +75,12 @@ export const metadata = {
 const RootLayout = ({ children }: { readonly children: ReactNode }) => {
   return (
     <html lang="it">
-      <body className="bg-white text-black">
-        <div className="max-w-7xl md:mx-auto mb-[25px]">
-          <Header />
-          {children}
-          <div className="mb-[200px]" />
+      <body className="bg-white text-black min-h-screen">
+        <div className="max-w-7xl md:mx-auto mb-[25px] min-h-full">
+          <div className="min-h-screen">
+            <Header />
+            {children}
+          </div>
           <Footer />
           <Analytics />
         </div>

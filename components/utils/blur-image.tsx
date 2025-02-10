@@ -11,12 +11,11 @@ interface BlurImageProps {
   readonly height?: number;
   readonly style?: CSSProperties;
   readonly priority?: boolean;
-  readonly unoptimized?: boolean;
   readonly fill?: boolean;
   readonly className?: string;
 }
 
-export const BlurImage = ({ src, alt, width, height, style, priority, unoptimized, fill, className }: BlurImageProps) => {
+export const BlurImage = ({ src, alt, width, height, style, priority, fill, className }: BlurImageProps) => {
   const [isLoading, setIsLoading] = useState(true);
 
   const onLoad = () => {
@@ -31,10 +30,9 @@ export const BlurImage = ({ src, alt, width, height, style, priority, unoptimize
         height={height}
         style={style}
         alt={alt}
-        className={`${className ?? ''} duration-700 w-auto h-auto ease-in-out ${isLoading ? 'blur' : 'blur-0'}`}
+        className={`${className ?? ''} duration-700 rounded w-auto h-auto ease-in-out ${isLoading ? 'blur' : 'blur-0'}`}
         onLoad={onLoad}
         priority={priority}
-        unoptimized={unoptimized}
         fill={fill}
       />
     </div>

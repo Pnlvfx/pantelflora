@@ -1,4 +1,4 @@
-import { address, cellNum, pIVA, tellNum } from '@/config/config';
+import { address, cellNum, email, pIVA, tellNum } from '@/config/config';
 
 export const Footer = () => {
   return (
@@ -23,7 +23,7 @@ export const Footer = () => {
             <br />
             {'Cell:'} {cellNum} {'(Michael)'}
             <br />
-            {'info@pantelflora.com'}
+            {email}
           </div>
         </div>
       </div>
