@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import Menu from '@/components/catalogo/Menu';
+import Menu from '@/components/catalogo/Menuu';
 import Carousel from '@/components/images/Carousel';
 import Link from 'next/link';
 

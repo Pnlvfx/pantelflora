@@ -1,6 +1,6 @@
 import { address, cellNum, pIVA, tellNum } from '@/config/config';
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <div className="bg-[#13961c] w-full">
       <div className="w-[320px] text-sm text-white m-[20px] ml-10">
@@ -38,5 +38,3 @@ const Footer = () => {
     </div>
   );
 };
-
-export default Footer;

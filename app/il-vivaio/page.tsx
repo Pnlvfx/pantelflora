@@ -1,4 +1,4 @@
-import Catalogue from '@/components/catalogo/Catalogue';
+import Catalogue from '@/components/catalogo/Cataloguee';
 import { vivaioImages } from '@/components/images/images';
 
 const VivaioPage = () => {

@@ -1,9 +1,10 @@
 'use client';
+
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 const menu = ['Palme', 'Ulivi', 'Agrumi', 'Piante Grasse', 'Altre Piante'];
 
-const Menu = () => {
+export const Menu = () => {
   const pathname = usePathname();
 
   return (
@@ -31,5 +32,3 @@ const Menu = () => {
     </div>
   );
 };
-
-export default Menu;

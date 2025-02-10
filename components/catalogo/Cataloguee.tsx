@@ -1,8 +1,14 @@
 'use client';
-import Link from 'next/link';
-import BlurImage from '../utils/blur-image';
 
-const Catalogue = ({ image, i }: { image: string; i: number }) => {
+import Link from 'next/link';
+import { BlurImage } from '../utils/blur-image';
+
+interface Props {
+  readonly image: string;
+  readonly i: number;
+}
+
+export const Catalogue = ({ image, i }: Props) => {
   return (
     <div className="mx-auto mb-[15px]">
       <div className="text-[11px]">
@@ -27,5 +33,3 @@ const Catalogue = ({ image, i }: { image: string; i: number }) => {
     </div>
   );
 };
-
-export default Catalogue;

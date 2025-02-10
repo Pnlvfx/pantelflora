@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 import type { Viewport } from 'next';
 import { NavBar } from '@/components/nav/nav-bar';
 import Header from '@/components/header/Headerr';
-import Footer from '@/components/header/Footerr';
+import Footer from '@/components/header/footer';
 import { clientUrl } from '@/config/config';
 import { Analytics } from '@vercel/analytics/react';
 
