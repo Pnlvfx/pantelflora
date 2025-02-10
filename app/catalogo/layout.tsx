@@ -1,8 +1,9 @@
+import type { ReactNode } from 'react';
 import Menu from '@/components/catalogo/Menu';
 import Carousel from '@/components/images/Carousel';
 import Link from 'next/link';
 
-const CatalogoLayout = ({ children }: ChildrenProps) => {
+const CatalogoLayout = ({ children }: { readonly children: ReactNode }) => {
   return (
     <div>
       <Carousel images={['/catalogo/header.jpg']} height={250} />

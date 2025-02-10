@@ -5,7 +5,7 @@ const Page = () => {
     <div className="pt-[20px] pb-[30px]">
       <div className="pr-6 pb-[30px] pl-[10px]">
         <div className="p-[5px] mb-[20px] border-b border-[#dedede]">
-          <h1 className="font-normal text-[#333333]">Contatti</h1>
+          <h1 className="font-normal text-[#333333]">{'Contatti'}</h1>
         </div>
         <div className="w-full mb-5 leading-[1.9em]">
           <table border={0} cellPadding={5} cellSpacing={5} className="w-full">

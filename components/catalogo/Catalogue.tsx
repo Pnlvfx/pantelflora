@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import BlurImage from '../utils/BlurImage';
+import BlurImage from '../utils/blur-image';
 
 const Catalogue = ({ image, i }: { image: string; i: number }) => {
   return (

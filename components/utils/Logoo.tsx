@@ -1,4 +1,6 @@
-export const Logo = (props: any) => {
+import type { SVGProps } from 'react';
+
+export const Logo = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

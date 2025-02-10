@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 const menu = ['Il vivaio'];
 
-const VivaioMenu = () => {
+export const VivaioMenu = () => {
   const pathname = usePathname();
 
   return (
@@ -31,5 +31,3 @@ const VivaioMenu = () => {
     </div>
   );
 };
-
-export default VivaioMenu;

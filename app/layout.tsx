@@ -1,25 +1,28 @@
-import NavBar from '@/components/nav/NavBar';
 import './globals.css';
+import type { ReactNode } from 'react';
+import type { Viewport } from 'next';
+import NavBar from '@/components/nav/NavBar';
 import Header from '@/components/header/Header';
 import Footer from '@/components/header/Footer';
 import { clientUrl } from '@/config/config';
 import { Analytics } from '@vercel/analytics/react';
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#ffffff',
+};
+
 export const metadata = {
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
   title: 'Vivaio Pantelleria',
   description:
     'Il vivaio Pantelflora è un vivaio specializzato nella vendita di piante di alta qualità con sede a Pantelleria. Scopri la nostra vasta selezione di piante, tra cui palme, cactus e piante da frutto.',
   referrer: 'origin-when-cross-origin',
   manifest: process.env.NODE_ENV === 'production' ? `${clientUrl}/site.webmanifest` : undefined,
   keywords: 'vivaio, piante, Pantelleria, palme, cactus, frutteto, vivaio Pantelleria, piante Pantelleria, Pantelflora, vivaio Pantelflora',
-  themeColor: '#ffffff',
   applicationName: 'pantelflora',
   appleWebApp: {
-    title: 'Bbabystyle',
+    title: 'Pantelflora',
     statusBarStyle: 'default',
     capable: true,
   },
@@ -40,7 +43,7 @@ export const metadata = {
   // },
 };
 
-const RootLayout = ({ children }: ChildrenProps) => {
+const RootLayout = ({ children }: { readonly children: ReactNode }) => {
   return (
     <html lang="it">
       <body cz-shortcut-listen="true">
