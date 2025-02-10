@@ -9,20 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.4.1",
+    "@vercel/analytics": "^1.5.0",
     "next": "^15.2.0-canary.49",
     "react": "19.0.0-rc.1",
     "react-dom": "19.0.0-rc.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
-    "@tailwindcss/postcss": "^4.0.2",
+    "@tailwindcss/postcss": "^4.0.6",
     "@types/eslint__eslintrc": "^2.1.2",
-    "@types/node": "^22.13.0",
+    "@types/node": "^22.13.1",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "babel-plugin-react-compiler": "0.0.0-experimental-a08709b-20250207",
-    "eslint": "^9.19.0",
+    "eslint": "^9.20.0",
     "eslint-config-next": "^15.2.0-canary.49",
     "eslint-plugin-no-inline-styles": "^1.0.5",
     "eslint-plugin-react-compiler": "0.0.0-experimental-a08709b-20250207",

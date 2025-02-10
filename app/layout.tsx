@@ -47,6 +47,8 @@ export const metadata = {
     'piante Pantelleria',
     'irrigazione piante',
     'cura delle piante',
+    'vivaio Sicilia',
+    'progettazione esterni',
   ],
   applicationName: 'Pantelflora',
   appleWebApp: {
