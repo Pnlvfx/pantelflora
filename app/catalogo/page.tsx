@@ -1,17 +1,20 @@
-import Catalogue from '@/components/catalogo/Cataloguee';
+import { Catalogue } from '@/components/catalogo/catalogue';
+import { CataloguePage } from '@/components/catalogo/catalogue-page';
 import { catalogueImages } from '@/config/images';
 
 const CatalogoPage = () => {
   const images = catalogueImages.find((c) => c.name === 'palme');
 
-  if (!images) return null;
+  if (!images) return;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      {images.images.map((image, index) => (
-        <Catalogue image={image} i={index} key={index} />
-      ))}
-    </div>
+    <CataloguePage activeRoute="palms">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {images.images.map((image, index) => (
+          <Catalogue image={image} i={index} key={image} />
+        ))}
+      </div>
+    </CataloguePage>
   );
 };
 

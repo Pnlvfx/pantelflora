@@ -1,20 +1,24 @@
 import { NavButton } from './nav-button';
 
-const list = [
-  { name: 'Home', url: '/' },
-  { name: 'Chi siamo', url: '/chi-siamo' },
-  { name: 'Catalogo', url: '/catalogo' },
-  { name: 'Il vivaio', url: '/il-vivaio' },
-  { name: 'Contatti', url: '/contatti' },
-];
+export type NavigationRoutes = keyof typeof list;
 
-export const NavBar = () => {
+const list = {
+  home: { name: 'Home', url: '/' },
+  whoami: { name: 'Chi siamo', url: '/chi-siamo' },
+  catalogue: { name: 'Catalogo', url: '/catalogo' },
+  vivaio: { name: 'Il vivaio', url: '/il-vivaio' },
+  contacts: { name: 'Contatti', url: '/contatti' },
+} as const;
+
+const listMap = Object.entries(list);
+
+export const NavBar = ({ activeRoute }: { readonly activeRoute: NavigationRoutes }) => {
   return (
     <nav className="flex flex-wrap items-center justify-between bg-[#13961c] mt-10">
-      <div className="grow flex items-center w-auto overflow-x-auto">
+      <div className="grow flex items-center w-auto overflow-x-auto no-scrollbar">
         <div className="flex grow items-center justify-between md:mx-10">
-          {list.map((l, i) => (
-            <NavButton name={l.name} url={l.url} key={i} />
+          {listMap.map(([id, { name, url }]) => (
+            <NavButton id={id as NavigationRoutes} active={activeRoute} name={name} url={url} key={id} />
           ))}
         </div>
       </div>

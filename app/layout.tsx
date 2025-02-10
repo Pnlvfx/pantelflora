@@ -1,9 +1,8 @@
 import './globals.css';
 import type { ReactNode } from 'react';
 import type { Viewport } from 'next';
-import { NavBar } from '@/components/nav/nav-bar';
-import Header from '@/components/header/Headerr';
-import Footer from '@/components/header/footer';
+import { Header } from '@/components/header/header';
+import { Footer } from '@/components/header/footer';
 import { clientUrl } from '@/config/config';
 import { Analytics } from '@vercel/analytics/react';
 
@@ -31,7 +30,7 @@ export const metadata = {
     shortcut: `${clientUrl}/favicon-16x16.png`,
     apple: `${clientUrl}/apple-touch-icon-180x180.png`,
   },
-  authors: [{ name: 'Pantelflora' }],
+  authors: [{ name: 'Simone Gauli', url: 'https://github.com/Pnlvfx' }],
   // twitter: {
   //   card: 'summary',
   // },
@@ -46,19 +45,12 @@ export const metadata = {
 const RootLayout = ({ children }: { readonly children: ReactNode }) => {
   return (
     <html lang="it">
-      <body cz-shortcut-listen="true">
-        <div className="max-w-[1200px] md:mx-auto">
-          <div className="mb-[25px]">
-            <Header />
-            <div>
-              <div>
-                <NavBar />
-              </div>
-            </div>
-            {children}
-            <div className="mb-[25px]" />
-            <Footer />
-          </div>
+      <body className="bg-white text-black">
+        <div className="max-w-7xl md:mx-auto mb-[25px]">
+          <Header />
+          {children}
+          <div className="mb-[200px]" />
+          <Footer />
           <Analytics />
         </div>
       </body>

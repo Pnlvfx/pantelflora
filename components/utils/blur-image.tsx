@@ -1,6 +1,8 @@
+/* eslint-disable unicorn/no-keyword-prefix */
 'use client';
-import Image from 'next/image';
+
 import { type CSSProperties, useState } from 'react';
+import Image from 'next/image';
 
 interface BlurImageProps {
   readonly src: string;

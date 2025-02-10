@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "unused": "node ./tools/unused.ts",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
+    "@goatjs/node": "github:Pnlvfx/goatjs#workspace=@goatjs/node",
     "@tailwindcss/postcss": "^4.0.2",
     "@types/eslint__eslintrc": "^2.1.2",
     "@types/node": "^22.13.0",
@@ -31,6 +33,7 @@
     "eslint-plugin-unicorn": "^56.0.1",
     "postcss": "8.5.1",
     "tailwindcss": "4.0.6",
+    "ts-unused-exports": "^11.0.1",
     "typescript": "5.7.3"
   },
   "packageManager": "yarn@4.6.0+sha512.5383cc12567a95f1d668fbe762dfe0075c595b4bfff433be478dbbe24e05251a8e8c3eb992a986667c1d53b6c3a9c85b8398c35a960587fbd9fa3a0915406728"

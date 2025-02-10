@@ -1,9 +1,11 @@
+import type { CatalogueMenuName } from '@/components/catalogo/menu';
 import { Catalogue } from '@/components/catalogo/catalogue';
 import { catalogueImages } from '@/config/images';
+import { CataloguePage } from '@/components/catalogo/catalogue-page';
 
 interface CatalogoTypePageProps {
   readonly params: Promise<{
-    type: string;
+    type: CatalogueMenuName;
   }>;
 }
 
@@ -14,11 +16,13 @@ const CatalogoTypePage = async ({ params }: CatalogoTypePageProps) => {
   if (!images) return;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      {images.images.map((image, index) => (
-        <Catalogue image={image} i={index} key={index} />
-      ))}
-    </div>
+    <CataloguePage activeRoute={type}>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {images.images.map((image, index) => (
+          <Catalogue image={image} i={index} key={image} />
+        ))}
+      </div>
+    </CataloguePage>
   );
 };
 
