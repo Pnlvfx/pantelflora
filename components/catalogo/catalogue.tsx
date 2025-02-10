@@ -17,7 +17,7 @@ export const Catalogue = ({ image, i }: Props) => {
             target="_blank"
             className="cursor-pointer w-full bg-[rgb(49,58,50)] absolute z-[5] inset-0 text-center transition-opacity opacity-0 hover:opacity-60"
           />
-          <BlurImage src={image} width={260} height={200} alt={`IMAGE${i.toString()}`} className="bg-center bg-cover" />
+          <BlurImage priority src={image} width={260} height={200} alt={`IMAGE${i.toString()}`} className="bg-center bg-cover" />
         </div>
       </div>
     </div>

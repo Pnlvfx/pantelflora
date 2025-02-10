@@ -28,7 +28,14 @@ export const Carousel = ({ images, height }: CarouselProps) => {
     <div className="w-full relative" style={{ height, '--duration': `${duration.toString()}s` } as CSSProperties}>
       <div className="relative w-full h-full">
         <div className="relative max-h-[600px] overflow-hidden w-full h-full flex items-center justify-center">
-          <BlurImage width={512} height={512} className="single-img" src={currentImage} alt={`SLIDER IMAGE ${currentIndex.toString()}`} />
+          <BlurImage
+            priority={currentIndex === 0}
+            width={512}
+            height={512}
+            className="single-img"
+            src={currentImage}
+            alt={`SLIDER IMAGE ${currentIndex.toString()}`}
+          />
         </div>
       </div>
     </div>
