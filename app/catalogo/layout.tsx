@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import Menu from '@/components/catalogo/Menuu';
-import Carousel from '@/components/images/Carousel';
+import Carousel from '@/components/images/Carousell';
 import Link from 'next/link';
 
 const CatalogoLayout = ({ children }: { readonly children: ReactNode }) => {

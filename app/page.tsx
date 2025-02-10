@@ -1,5 +1,5 @@
-import Carousel from '@/components/images/Carousel';
-import { banners } from '@/components/images/images';
+import Carousel from '@/components/images/Carousell';
+import { banners } from '@/config/images';
 
 const Home = () => {
   return (

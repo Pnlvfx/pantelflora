@@ -1,5 +1,5 @@
 import { deviceIsMobile } from '@/config/server-config';
-import Carousel from '@/components/images/Carousel';
+import Carousel from '@/components/images/Carousell';
 
 const Page = async () => {
   const isMobile = await deviceIsMobile();

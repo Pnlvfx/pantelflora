@@ -1,5 +1,5 @@
 import Catalogue from '@/components/catalogo/Cataloguee';
-import { catalogueImages } from '@/components/images/images';
+import { catalogueImages } from '@/config/images';
 
 const CatalogoPage = () => {
   const images = catalogueImages.find((c) => c.name === 'palme');

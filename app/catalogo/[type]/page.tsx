@@ -1,16 +1,17 @@
-import Catalogue from '@/components/catalogo/Cataloguee';
-import { catalogueImages } from '@/components/images/images';
+import { Catalogue } from '@/components/catalogo/catalogue';
+import { catalogueImages } from '@/config/images';
 
 interface CatalogoTypePageProps {
-  params: {
+  readonly params: Promise<{
     type: string;
-  };
+  }>;
 }
 
-const CatalogoTypePage = ({ params }: CatalogoTypePageProps) => {
-  const images = catalogueImages.find((c) => c.name === params.type);
+const CatalogoTypePage = async ({ params }: CatalogoTypePageProps) => {
+  const { type } = await params;
+  const images = catalogueImages.find((c) => c.name === type);
 
-  if (!images) return null;
+  if (!images) return;
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

@@ -8,11 +8,11 @@ const banner7 = '/banner/banner5.jpg';
 
 export const banners = [banner1, banner2, banner3, banner4, banner5, banner6, banner7];
 
-const palmImages = Array.from({ length: 21 }).map((_, i) => `/palme/${i}.jpeg`);
-const oliveImages = Array.from({ length: 14 }).map((_, i) => `/ulivi/${i}.jpeg`);
-const agrumiImages = Array.from({ length: 8 }).map((_, i) => `/agrumi/${i}.jpeg`);
-const pianteGrasseImages = Array.from({ length: 8 }).map((_, i) => `/piante-grasse/${i}.jpeg`);
-const altrePianteImages = Array.from({ length: 5 }).map((_, i) => `/altre-piante/${i}.jpeg`);
+const palmImages = Array.from({ length: 21 }).map((_, i) => `/palme/${i.toString()}.jpeg`);
+const oliveImages = Array.from({ length: 14 }).map((_, i) => `/ulivi/${i.toString()}.jpeg`);
+const agrumiImages = Array.from({ length: 8 }).map((_, i) => `/agrumi/${i.toString()}.jpeg`);
+const pianteGrasseImages = Array.from({ length: 8 }).map((_, i) => `/piante-grasse/${i.toString()}.jpeg`);
+const altrePianteImages = Array.from({ length: 5 }).map((_, i) => `/altre-piante/${i.toString()}.jpeg`);
 
 export const catalogueImages = [
   {
@@ -37,4 +37,4 @@ export const catalogueImages = [
   },
 ];
 
-export const vivaioImages = Array.from({ length: 96 }).map((_, i) => `/vivaio/${i}.jpeg`);
+export const vivaioImages = Array.from({ length: 96 }).map((_, i) => `/vivaio/${i.toString()}.jpeg`);

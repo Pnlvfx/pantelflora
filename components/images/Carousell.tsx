@@ -1,7 +1,7 @@
 'use client';
 
 import { CSSProperties, useEffect, useState } from 'react';
-import BlurImage from '../utils/blur-image';
+import { BlurImage } from '../utils/blur-image';
 
 const duration = 15;
 

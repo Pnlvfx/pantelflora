@@ -1,5 +1,5 @@
 import Catalogue from '@/components/catalogo/Cataloguee';
-import { vivaioImages } from '@/components/images/images';
+import { vivaioImages } from '@/config/images';
 
 const VivaioPage = () => {
   return (
