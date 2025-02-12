@@ -23,18 +23,16 @@ export const BlurImage = ({ src, alt, width, height, style, priority, fill, clas
   };
 
   return (
-    <div className="group">
-      <Image
-        src={src}
-        width={width}
-        height={height}
-        style={style}
-        alt={alt}
-        className={`${className ?? ''} duration-700 rounded w-auto h-auto ease-in-out ${isLoading ? 'blur' : 'blur-0'}`}
-        onLoad={onLoad}
-        priority={priority}
-        fill={fill}
-      />
-    </div>
+    <Image
+      src={src}
+      width={width}
+      height={height}
+      style={style}
+      alt={alt}
+      className={`${className ?? ''} duration-700 rounded w-auto h-auto ease-in-out transition-all ${isLoading ? 'blur' : 'blur-0'}`}
+      onLoad={onLoad}
+      priority={priority}
+      fill={fill}
+    />
   );
 };
