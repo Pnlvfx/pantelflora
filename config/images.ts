@@ -16,7 +16,7 @@ const agrumiContent = await fs.readdir(path.join(publicPath, '/agrumi'));
 const agrumiImages = agrumiContent.map((p) => `/agrumi/${p}`);
 
 const pianteGrasseContent = await fs.readdir(path.join(publicPath, '/piante-grasse'));
-const pianteGrasseImages = pianteGrasseContent.map((p) => `/piange-grasse/${p}`);
+const pianteGrasseImages = pianteGrasseContent.map((p) => `/piante-grasse/${p}`);
 
 const altrePianteContent = await fs.readdir(path.join(publicPath, '/altre-piante'));
 const altrePianteImages = altrePianteContent.map((p) => `/altre-piante/${p}`);
