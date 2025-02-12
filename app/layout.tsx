@@ -63,7 +63,7 @@ export const metadata = {
   },
   authors: [{ name: 'Simone Gauli', url: 'https://github.com/Pnlvfx' }],
   openGraph: {
-    title: 'Vivaio Pantelleria - Piante Mediterranee e Soluzioni per Giardinaggio',
+    title: 'Vivaio Pantelleria',
     description: 'Esperti nella flora pantesca, offriamo piante resistenti e servizi professionali per giardini nel clima unico di Pantelleria',
     url: clientUrl,
     siteName: 'Pantelflora',

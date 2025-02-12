@@ -1,18 +1,25 @@
-const banner1 = '/banner/001.jpg';
-const banner2 = '/banner/002.jpg';
-const banner3 = '/banner/003.jpeg';
-const banner4 = '/banner/004.jpeg';
-const banner5 = '/banner/06.jpeg';
-const banner6 = '/banner/banner1.jpg';
-const banner7 = '/banner/banner5.jpg';
+import fs from 'node:fs/promises';
+import path from 'node:path';
 
-export const banners = [banner1, banner2, banner3, banner4, banner5, banner6, banner7];
+const publicPath = path.join(process.cwd(), '/public');
 
-const palmImages = Array.from({ length: 21 }).map((_, i) => `/palme/${i.toString()}.jpeg`);
-const oliveImages = Array.from({ length: 14 }).map((_, i) => `/ulivi/${i.toString()}.jpeg`);
-const agrumiImages = Array.from({ length: 8 }).map((_, i) => `/agrumi/${i.toString()}.jpeg`);
-const pianteGrasseImages = Array.from({ length: 8 }).map((_, i) => `/piante-grasse/${i.toString()}.jpeg`);
-const altrePianteImages = Array.from({ length: 5 }).map((_, i) => `/altre-piante/${i.toString()}.jpeg`);
+const bannersContent = await fs.readdir(path.join(publicPath, '/banner'));
+export const banners = bannersContent.map((b) => `/banner/${b}`);
+
+const palmsContent = await fs.readdir(path.join(publicPath, '/palme'));
+const palmImages = palmsContent.map((p) => `/palme/${p}`);
+
+const oliveContent = await fs.readdir(path.join(publicPath, '/ulivi'));
+const oliveImages = oliveContent.map((p) => `/ulivi/${p}`);
+
+const agrumiContent = await fs.readdir(path.join(publicPath, '/agrumi'));
+const agrumiImages = agrumiContent.map((p) => `/agrumi/${p}`);
+
+const pianteGrasseContent = await fs.readdir(path.join(publicPath, '/piante-grasse'));
+const pianteGrasseImages = pianteGrasseContent.map((p) => `/piange-grasse/${p}`);
+
+const altrePianteContent = await fs.readdir(path.join(publicPath, '/altre-piante'));
+const altrePianteImages = altrePianteContent.map((p) => `/altre-piante/${p}`);
 
 export const catalogueImages = [
   {

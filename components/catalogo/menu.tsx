@@ -3,7 +3,7 @@ import Link from 'next/link';
 export type CatalogueMenuName = keyof typeof menu;
 
 const menu = {
-  palms: { name: 'Palme' },
+  palme: { name: 'Palme' },
   ulivi: { name: 'Ulivi' },
   agrumi: { name: 'Agrumi' },
   'piante-grasse': { name: 'Piante Grasse' },
