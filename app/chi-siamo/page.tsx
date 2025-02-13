@@ -1,14 +1,12 @@
-import { deviceIsMobile } from '@/config/server-config';
 import { Carousel } from '@/components/images/carousel';
 import { NavBar } from '@/components/nav/nav-bar';
 
-const Page = async () => {
-  const isMobile = await deviceIsMobile();
-
+const Page = () => {
   return (
     <div>
       <NavBar activeRoute="whoami" />
-      <Carousel images={['/chi-siamo.jpg']} height={isMobile ? 220 : 400} />
+      <div className="mt-20" />
+      <Carousel images={['/chi-siamo.jpg']} />
       <div className="my-[25px]">
         <div className="pt-[20px] pb-[30px]">
           <div className="pr-6 pb-[30px] pl-[10px]">
