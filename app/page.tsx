@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <>
       <NavBar activeRoute="home" />
-      <div className="relative">
-        <Carousel images={banners} height={600} />
+      <div className="relative mt-20">
+        <Carousel images={banners} />
       </div>
     </>
   );

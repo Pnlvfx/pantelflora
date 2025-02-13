@@ -70,13 +70,19 @@ export const metadata = {
     locale: 'it_IT',
     type: 'website',
   },
+  formatDetection: {
+    address: false,
+    date: false,
+    email: false,
+    telephone: false,
+  },
 };
 
 const RootLayout = ({ children }: { readonly children: ReactNode }) => {
   return (
     <html lang="it">
-      <body className="bg-white text-black min-h-screen">
-        <div className="max-w-7xl md:mx-auto mb-[25px] min-h-full">
+      <body className="bg-white text-black">
+        <div className="max-w-7xl md:mx-auto mb-[25px]">
           <div className="min-h-screen">
             <Header />
             {children}

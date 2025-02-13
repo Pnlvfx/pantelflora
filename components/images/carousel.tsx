@@ -1,16 +1,15 @@
 'use client';
 
 import { type CSSProperties, useEffect, useState } from 'react';
-import { BlurImage } from '../utils/blur-image';
+import Image from 'next/image';
 
 const duration = 15;
 
 interface CarouselProps {
   readonly images: string[];
-  readonly height: number;
 }
 
-export const Carousel = ({ images, height }: CarouselProps) => {
+export const Carousel = ({ images }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -25,19 +24,14 @@ export const Carousel = ({ images, height }: CarouselProps) => {
   if (!currentImage) return;
 
   return (
-    <div className="w-full relative" style={{ height, '--duration': `${duration.toString()}s` } as CSSProperties}>
-      <div className="relative w-full h-full">
-        <div className="relative max-h-[600px] overflow-hidden w-full h-full flex items-center justify-center">
-          <BlurImage
-            priority={currentIndex === 0}
-            width={512}
-            height={512}
-            className="single-img"
-            src={currentImage}
-            alt={`SLIDER IMAGE ${currentIndex.toString()}`}
-          />
-        </div>
-      </div>
+    <div className="h-[calc(100vh/2)] relative max-h-[600px] overflow-hidden" style={{ '--duration': `${duration.toString()}s` } as CSSProperties}>
+      <Image
+        priority={currentIndex === 0}
+        fill
+        className="single-img object-cover select-none pointer-events-none"
+        src={currentImage}
+        alt={`SLIDER IMAGE ${currentIndex.toString()}`}
+      />
     </div>
   );
 };
