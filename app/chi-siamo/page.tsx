@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <div>
       <NavBar activeRoute="whoami" />
-      <div className="mt-20" />
+      <div className="mt-4" />
       <Carousel images={['/chi-siamo.jpg']} />
       <div className="my-[25px]">
         <div className="pt-[20px] pb-[30px]">
