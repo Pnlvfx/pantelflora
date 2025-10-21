@@ -18,7 +18,7 @@ export const NavBar = ({ activeRoute }: { readonly activeRoute: NavigationRoutes
       <div className="grow flex items-center w-auto overflow-x-auto no-scrollbar">
         <div className="flex grow items-center justify-between">
           {listMap.map(([id, { name, url }]) => (
-            <NavButton id={id as NavigationRoutes} active={activeRoute} name={name} url={url} key={id} />
+            <NavButton active={activeRoute} id={id as NavigationRoutes} key={id} name={name} url={url} />
           ))}
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { NavBar } from '@/components/nav/nav-bar';
-import { address, cellNum, tellNum } from '@/config/config';
+import { address, cellNum, tellNum } from '@/config/constants';
 
 const Page = () => {
   return (

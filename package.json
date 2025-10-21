@@ -3,36 +3,36 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "unused": "node tools/unused.ts",
+    "lint": "eslint",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && yarn lint",
     "start": "next start",
-    "lint": "next lint"
+    "update": "node tools/update.ts && yarn upgrade-interactive"
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
-    "next": "^15.2.0-canary.55",
-    "react": "19.0.0-rc.1",
-    "react-dom": "19.0.0-rc.1",
-    "sharp": "^0.33.5"
+    "next": "^16.0.0-canary.17",
+    "react": "19.3.0-canary-71b3a03c-20251021",
+    "react-dom": "19.3.0-canary-71b3a03c-20251021",
+    "sharp": "^0.34.4"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.2.0",
-    "@tailwindcss/postcss": "^4.0.6",
-    "@types/eslint__eslintrc": "^2.1.2",
-    "@types/node": "^22.13.1",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
-    "babel-plugin-react-compiler": "0.0.0-experimental-30d8a17-20250212",
-    "eslint": "^9.20.0",
-    "eslint-config-next": "^15.2.0-canary.55",
-    "eslint-plugin-no-inline-styles": "^1.0.5",
-    "eslint-plugin-react-compiler": "0.0.0-experimental-30d8a17-20250212",
-    "eslint-plugin-sonarjs": "^3.0.1",
-    "eslint-plugin-unicorn": "^56.0.1",
-    "postcss": "8.5.1",
-    "tailwindcss": "4.0.6",
-    "ts-unused-exports": "^11.0.1",
-    "typescript": "5.7.3"
+    "@goatjs/dbz": "^1.29.0",
+    "@goatjs/nextjs-eslint": "^1.16.0",
+    "@goatjs/ts-unused-exports": "^1.29.0",
+    "@goatjs/typescript-config": "^1.29.0",
+    "@tailwindcss/postcss": "^4.1.15",
+    "@types/node": "^24.9.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "babel-plugin-react-compiler": "0.0.0-experimental-3189d74-20251021",
+    "eslint": "^9.38.0",
+    "postcss": "^8.5.6",
+    "postcss-load-config": "^6.0.1",
+    "prettier": "^3.6.2",
+    "tailwindcss": "4.1.15",
+    "typescript": "5.9.3"
   },
-  "packageManager": "yarn@4.6.0+sha512.5383cc12567a95f1d668fbe762dfe0075c595b4bfff433be478dbbe24e05251a8e8c3eb992a986667c1d53b6c3a9c85b8398c35a960587fbd9fa3a0915406728"
+  "packageManager": "yarn@4.10.3+sha512.c38cafb5c7bb273f3926d04e55e1d8c9dfa7d9c3ea1f36a4868fa028b9e5f72298f0b7f401ad5eb921749eb012eb1c3bb74bf7503df3ee43fd600d14a018266f"
 }

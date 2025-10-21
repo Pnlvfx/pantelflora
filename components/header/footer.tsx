@@ -1,4 +1,5 @@
-import { address, cellNum, email, pIVA, tellNum } from '@/config/config';
+/* eslint-disable unicorn/no-array-reverse */
+import { address, cellNum, email, pIVA, tellNum } from '@/config/constants';
 
 export const Footer = () => {
   return (
@@ -27,12 +28,12 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[5.25rem] bg-white pb-[5.25rem]">
+      <div className="mt-21 bg-white pb-21">
         <div className="mt-[23px]">
           {Array.from({ length: 24 }, (_, i) => i)
             .reverse()
             .map((reverse, i) => (
-              <div key={reverse} className="bg-[#13961c]" style={{ marginTop: i, height: reverse }} />
+              <div className="bg-[#13961c]" key={reverse} style={{ marginTop: i, height: reverse }} />
             ))}
         </div>
       </div>

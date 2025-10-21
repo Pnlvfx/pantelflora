@@ -1,10 +1,10 @@
 import './globals.css';
 import type { ReactNode } from 'react';
-import type { Viewport } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Header } from '@/components/header/header';
 import { Footer } from '@/components/header/footer';
-import { clientUrl } from '@/config/config';
 import { Analytics } from '@vercel/analytics/react';
+import { config } from '@/config/config';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -12,12 +12,12 @@ export const viewport: Viewport = {
   themeColor: '#ffffff',
 };
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Vivaio Pantelleria',
   description:
     'Il vivaio Pantelflora è un vivaio specializzato nella vendita di piante di alta qualità con sede a Pantelleria. Scopri la nostra vasta selezione di piante, tra cui palme, cactus e piante da frutto.',
   referrer: 'origin-when-cross-origin',
-  manifest: process.env.NODE_ENV === 'production' ? `${clientUrl}/site.webmanifest` : undefined,
+  manifest: config.NODE_ENV === 'production' ? `${config.CLIENT_URL}/site.webmanifest` : undefined,
   keywords: [
     'vivaio Pantelleria',
     'piante mediterranee',
@@ -57,15 +57,15 @@ export const metadata = {
     capable: true,
   },
   icons: {
-    icon: `${clientUrl}/favicon-32x32.png`,
-    shortcut: `${clientUrl}/favicon-16x16.png`,
-    apple: `${clientUrl}/apple-touch-icon-180x180.png`,
+    icon: `${config.CLIENT_URL}/favicon-32x32.png`,
+    shortcut: `${config.CLIENT_URL}/favicon-16x16.png`,
+    apple: `${config.CLIENT_URL}/apple-touch-icon-180x180.png`,
   },
   authors: [{ name: 'Simone Gauli', url: 'https://github.com/Pnlvfx' }],
   openGraph: {
     title: 'Vivaio Pantelleria',
     description: 'Esperti nella flora pantesca, offriamo piante resistenti e servizi professionali per giardini nel clima unico di Pantelleria',
-    url: clientUrl,
+    url: config.CLIENT_URL,
     siteName: 'Pantelflora',
     locale: 'it_IT',
     type: 'website',

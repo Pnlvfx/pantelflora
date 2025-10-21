@@ -26,11 +26,11 @@ export const Carousel = ({ images }: CarouselProps) => {
   return (
     <div className="h-[calc(100vh/2)] relative max-h-[600px] overflow-hidden" style={{ '--duration': `${duration.toString()}s` } as CSSProperties}>
       <Image
-        priority={currentIndex === 0}
-        fill
-        className="single-img object-cover select-none pointer-events-none"
-        src={currentImage}
         alt={`SLIDER IMAGE ${currentIndex.toString()}`}
+        className="single-img object-cover select-none pointer-events-none"
+        fill
+        priority={currentIndex === 0}
+        src={currentImage}
       />
     </div>
   );
