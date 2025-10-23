@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
-    "next": "^16.0.0-canary.17",
+    "next": "^16.0.1-canary.0",
     "react": "19.3.0-canary-71b3a03c-20251021",
     "react-dom": "19.3.0-canary-71b3a03c-20251021",
     "sharp": "^0.34.4"
@@ -22,7 +22,7 @@
     "@goatjs/nextjs-eslint": "^1.16.0",
     "@goatjs/ts-unused-exports": "^1.29.0",
     "@goatjs/typescript-config": "^1.29.0",
-    "@tailwindcss/postcss": "^4.1.15",
+    "@tailwindcss/postcss": "^4.1.16",
     "@types/node": "^24.9.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
@@ -31,7 +31,7 @@
     "postcss": "^8.5.6",
     "postcss-load-config": "^6.0.1",
     "prettier": "^3.6.2",
-    "tailwindcss": "4.1.15",
+    "tailwindcss": "4.1.16",
     "typescript": "5.9.3"
   },
   "packageManager": "yarn@4.10.3+sha512.c38cafb5c7bb273f3926d04e55e1d8c9dfa7d9c3ea1f36a4868fa028b9e5f72298f0b7f401ad5eb921749eb012eb1c3bb74bf7503df3ee43fd600d14a018266f"
