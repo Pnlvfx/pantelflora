@@ -11,7 +11,7 @@ export const VivaioPage = ({ activeRoute, children }: Props) => {
   return (
     <div className="pb-[30px]">
       <div className="mx-2 my-1 md:mx-0 md:my-0">
-        <div className="mb-[20px] z-10 border-b border-solid border-[#dedede]">
+        <div className="mb-5 z-10 border-b border-solid border-[#dedede]">
           <h1 className="font-normal p-0 m-0 text-[#333333]">
             <Link href={'/il-vivaio'} target="_blank">
               {'Il vivaio'}
@@ -20,7 +20,7 @@ export const VivaioPage = ({ activeRoute, children }: Props) => {
         </div>
         <VivaioMenu activeRoute={activeRoute} />
       </div>
-      <div className="mb-[10px] h-[5px]" />
+      <div className="mb-2.5 h-[5px]" />
       {children}
     </div>
   );

@@ -6,11 +6,7 @@ import { Footer } from '@/components/header/footer';
 import { Analytics } from '@vercel/analytics/react';
 import { config } from '@/config/config';
 
-export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1,
-  themeColor: '#ffffff',
-};
+export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#ffffff' };
 
 export const metadata: Metadata = {
   title: 'Vivaio Pantelleria',

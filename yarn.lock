@@ -1389,12 +1389,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-react-compiler@npm:0.0.0-experimental-3189d74-20251021":
-  version: 0.0.0-experimental-3189d74-20251021
-  resolution: "babel-plugin-react-compiler@npm:0.0.0-experimental-3189d74-20251021"
+"babel-plugin-react-compiler@npm:0.0.0-experimental-09f53a9-20251023":
+  version: 0.0.0-experimental-09f53a9-20251023
+  resolution: "babel-plugin-react-compiler@npm:0.0.0-experimental-09f53a9-20251023"
   dependencies:
     "@babel/types": "npm:^7.26.0"
-  checksum: 10c0/522b3cf5142fca48ad2d591639891c6e96c9f94302bc7f5ec71b599215b32804b7565555e71c574ff5c14247b24a3e79608538f442394e2974ab8ffcfa9e2582
+  checksum: 10c0/29820fe83eadcce45d6fcbca3d5a57fa0a991ffb313f191987a86753e47e248f4d00feb041afaf1b3b783157d0520e34dd10d5a65461496074fa5e9d1483272d
   languageName: node
   linkType: hard
 
@@ -3383,14 +3383,14 @@ __metadata:
     "@types/react": "npm:^19.2.2"
     "@types/react-dom": "npm:^19.2.2"
     "@vercel/analytics": "npm:^1.5.0"
-    babel-plugin-react-compiler: "npm:0.0.0-experimental-3189d74-20251021"
+    babel-plugin-react-compiler: "npm:0.0.0-experimental-09f53a9-20251023"
     eslint: "npm:^9.38.0"
     next: "npm:^16.0.1-canary.0"
     postcss: "npm:^8.5.6"
     postcss-load-config: "npm:^6.0.1"
     prettier: "npm:^3.6.2"
-    react: "npm:19.3.0-canary-71b3a03c-20251021"
-    react-dom: "npm:19.3.0-canary-71b3a03c-20251021"
+    react: "npm:19.3.0-canary-6160773f-20251023"
+    react-dom: "npm:19.3.0-canary-6160773f-20251023"
     sharp: "npm:^0.34.4"
     tailwindcss: "npm:4.1.16"
     typescript: "npm:5.9.3"
@@ -3541,14 +3541,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:19.3.0-canary-71b3a03c-20251021":
-  version: 19.3.0-canary-71b3a03c-20251021
-  resolution: "react-dom@npm:19.3.0-canary-71b3a03c-20251021"
+"react-dom@npm:19.3.0-canary-6160773f-20251023":
+  version: 19.3.0-canary-6160773f-20251023
+  resolution: "react-dom@npm:19.3.0-canary-6160773f-20251023"
   dependencies:
-    scheduler: "npm:0.28.0-canary-71b3a03c-20251021"
+    scheduler: "npm:0.28.0-canary-6160773f-20251023"
   peerDependencies:
-    react: 19.3.0-canary-71b3a03c-20251021
-  checksum: 10c0/052e45596835ba413963441843f02c0fdb5a138014ed8f9aebbf81b4c1e90fd20222b5109cc81e7eb60200f5e4f69f5ee196cd45f19b9a388e18d99a854910f6
+    react: 19.3.0-canary-6160773f-20251023
+  checksum: 10c0/dc5571fc4c97286c04bf7ab2158f66b3e66cb1702e5327dcfe30a7c9be4ebf3f2c9d7d6afc1182206862ac10d5a9e5a0a80e4f987dd61a87dbc1f2b70322ecd0
   languageName: node
   linkType: hard
 
@@ -3559,10 +3559,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:19.3.0-canary-71b3a03c-20251021":
-  version: 19.3.0-canary-71b3a03c-20251021
-  resolution: "react@npm:19.3.0-canary-71b3a03c-20251021"
-  checksum: 10c0/adfdeacfad1c28f99db2ccb8915980fcf9af84feecc0475cf0e9712289fac98977d6e9d4c655c992b72e6788e4dc53f8dacd4127f8ec6714a06dde3593a9a2c7
+"react@npm:19.3.0-canary-6160773f-20251023":
+  version: 19.3.0-canary-6160773f-20251023
+  resolution: "react@npm:19.3.0-canary-6160773f-20251023"
+  checksum: 10c0/b3300f33cfd001126ac4c4fcb9ce34c1706fd3573746856511bb303e14e38f2cf4cf004698552abc215752fe030fdd628b6187957bd9a6d9fdf05150cd093ae5
   languageName: node
   linkType: hard
 
@@ -3727,10 +3727,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:0.28.0-canary-71b3a03c-20251021":
-  version: 0.28.0-canary-71b3a03c-20251021
-  resolution: "scheduler@npm:0.28.0-canary-71b3a03c-20251021"
-  checksum: 10c0/247f92effbfa7f7c3de6bd8691ec80f333486c75f79f0186f463804336e889749c3c3efdd44ead1cc46536491c9473e17d8851ff648587e2421c60f4840cf8a9
+"scheduler@npm:0.28.0-canary-6160773f-20251023":
+  version: 0.28.0-canary-6160773f-20251023
+  resolution: "scheduler@npm:0.28.0-canary-6160773f-20251023"
+  checksum: 10c0/92cc7ba0df832ac065d366a91f9448d49b03e5bae889a8b0bcd8727b35a7ba7105d246e6a90801eb5989d39c8465db0190aa2f7eafc97a1317367d5d89eae89a
   languageName: node
   linkType: hard
 

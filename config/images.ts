@@ -4,22 +4,22 @@ import path from 'node:path';
 const publicPath = path.join(process.cwd(), '/public');
 
 const bannersContent = await fs.readdir(path.join(publicPath, '/banner'));
-export const banners = bannersContent.map((b) => `/banner/${b}`);
+export const banners = bannersContent.map((b) => `/banner/${b}` as const);
 
 const palmsContent = await fs.readdir(path.join(publicPath, '/palme'));
-const palmImages = palmsContent.map((p) => `/palme/${p}`);
+const palmImages = palmsContent.map((p) => `/palme/${p}` as const);
 
 const oliveContent = await fs.readdir(path.join(publicPath, '/ulivi'));
-const oliveImages = oliveContent.map((p) => `/ulivi/${p}`);
+const oliveImages = oliveContent.map((p) => `/ulivi/${p}` as const);
 
 const agrumiContent = await fs.readdir(path.join(publicPath, '/agrumi'));
-const agrumiImages = agrumiContent.map((p) => `/agrumi/${p}`);
+const agrumiImages = agrumiContent.map((p) => `/agrumi/${p}` as const);
 
 const pianteGrasseContent = await fs.readdir(path.join(publicPath, '/piante-grasse'));
-const pianteGrasseImages = pianteGrasseContent.map((p) => `/piante-grasse/${p}`);
+const pianteGrasseImages = pianteGrasseContent.map((p) => `/piante-grasse/${p}` as const);
 
 const altrePianteContent = await fs.readdir(path.join(publicPath, '/altre-piante'));
-const altrePianteImages = altrePianteContent.map((p) => `/altre-piante/${p}`);
+const altrePianteImages = altrePianteContent.map((p) => `/altre-piante/${p}` as const);
 
 export const catalogueImages = [
   {

@@ -5,9 +5,9 @@ const Page = () => {
   return (
     <>
       <NavBar activeRoute="contacts" />
-      <div className="pt-[20px] pb-[30px]">
-        <div className="pr-6 pb-[30px] pl-[10px]">
-          <div className="p-[5px] mb-[20px] border-b border-[#dedede]">
+      <div className="pt-5 pb-[30px]">
+        <div className="pr-6 pb-[30px] pl-2.5">
+          <div className="p-[5px] mb-5 border-b border-[#dedede]">
             <h1 className="font-normal text-[#333333]">{'Contatti'}</h1>
           </div>
           <div className="w-full mb-5 leading-[1.9em] grid md:grid-cols-2">
