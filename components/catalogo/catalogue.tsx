@@ -1,12 +1,13 @@
+import type { Route } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
-interface Props {
-  readonly image: string;
+interface Props<T extends string> {
+  readonly image: Route<T>;
   readonly i: number;
 }
 
-export const Catalogue = ({ image, i }: Props) => {
+export const Catalogue = <T extends string>({ image, i }: Props<T>) => {
   return (
     <div className="mx-auto text-[11px]">
       <div className="relative">

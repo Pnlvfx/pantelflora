@@ -1,23 +1,10 @@
 {
   "extends": "@goatjs/typescript-config/nextjs/tsconfig.json",
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.js",
-    "postcss.config.mjs"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/dev/types/**/*.ts", "**/*.js", "postcss.config.mjs"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
     "paths": {
-      "@/*": [
-        "./*"
-      ]
-    },
-    "jsx": "preserve"
+      "@/*": ["./*"]
+    }
   }
 }

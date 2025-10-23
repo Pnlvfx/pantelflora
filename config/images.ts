@@ -42,6 +42,6 @@ export const catalogueImages = [
     name: 'altre-piante',
     images: altrePianteImages,
   },
-];
+] as const;
 
-export const vivaioImages = Array.from({ length: 96 }).map((_, i) => `/vivaio/${i.toString()}.jpeg`);
+export const vivaioImages = Array.from({ length: 96 }).map((_, i) => `/vivaio/${i.toString()}.jpeg` as const);
