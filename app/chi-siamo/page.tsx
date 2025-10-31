@@ -27,6 +27,11 @@ const Page = () => {
                     {
                       'A disposizione dei clienti molteplici specie e varietà per ambienti esterni ed interni e accessori come vasi e terricci il tutto accompagnato dalla pluriennale esperienza dello staff, pronto a fornire consigli ed aiuto per gli acquisti.'
                     }
+                    <br />
+                    <br />
+                    {
+                      'Specializzati nella coltivazione di piante di ulivo a portamento basso, varietà Biancolilla, ideali per il clima e il terreno di Pantelleria.'
+                    }
                   </span>
                 </span>
                 <br />

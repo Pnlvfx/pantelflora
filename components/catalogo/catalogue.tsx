@@ -9,14 +9,14 @@ interface Props<T extends string> {
 
 export const Catalogue = <T extends string>({ image, i }: Props<T>) => {
   return (
-    <div className="mx-auto text-[11px]">
+    <div className="mx-auto text-[11px] my-2">
       <div className="relative">
         <Link
           className="cursor-pointer w-full bg-[rgb(49,58,50)] absolute z-5 inset-0 text-center transition-opacity opacity-0 hover:opacity-60"
           href={image}
           target="_blank"
         />
-        <Image alt={`IMAGE${i.toString()}`} className="bg-center bg-cover" height={200} priority src={image} width={260} />
+        <Image alt={`IMAGE${i.toString()}`} className="bg-center bg-cover mx-auto" height={200} priority src={image} width={260} />
       </div>
     </div>
   );
