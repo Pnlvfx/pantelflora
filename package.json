@@ -1,12 +1,12 @@
 {
   "name": "pantelflora",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "unused": "node tools/unused.ts",
     "lint": "eslint",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && yarn lint",
     "start": "next start",
     "update": "node tools/update.ts && yarn upgrade-interactive",
     "deploy": "node tools/deploy.ts"
