@@ -44,4 +44,5 @@ export const catalogueImages = [
   },
 ] as const;
 
-export const vivaioImages = Array.from({ length: 96 }).map((_, i) => `/vivaio/${i.toString()}.jpeg` as const);
+const vivaioContents = await fs.readdir(path.join(publicPath, '/vivaio'));
+export const vivaioImages = vivaioContents.map((name) => `/vivaio/${name}` as const).reverse();
