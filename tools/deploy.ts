@@ -1,8 +1,8 @@
 import { rimraf } from '@goatjs/rimraf';
-import { spawnWithLog } from '@goatjs/node/dev/spawn';
+import { spawnWithLog } from '@goatjs/dbz/spawn';
 import { createGitClient } from '@goatjs/node/git';
 import { execAsync } from '@goatjs/node/exec';
-import { checkGitStatus } from '@goatjs/node/dev/git';
+import { checkGitStatus } from '@goatjs/dbz/git';
 
 await checkGitStatus();
 

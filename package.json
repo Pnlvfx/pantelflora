@@ -5,36 +5,40 @@
   "scripts": {
     "unused": "node tools/unused.ts",
     "lint": "eslint",
-    "dev": "next dev",
-    "build": "next build && yarn lint",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack && yarn lint",
     "start": "next start",
     "update": "node tools/update.ts && yarn upgrade-interactive",
     "deploy": "node tools/deploy.ts"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.5.0",
-    "next": "^16.0.2-canary.2",
-    "react": "19.3.0-canary-3a0ab8a7-20251029",
-    "react-dom": "19.3.0-canary-3a0ab8a7-20251029",
-    "sharp": "^0.34.4"
+    "@coraline-ui/form": "^1.38.0",
+    "@coraline-ui/ui": "^1.38.0",
+    "@vercel/analytics": "^1.6.1",
+    "next": "^16.1.0-canary.15",
+    "react": "19.3.0-canary-378973b3-20251205",
+    "react-dom": "19.3.0-canary-378973b3-20251205",
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
-    "@goatjs/dbz": "^1.37.0",
-    "@goatjs/nextjs-eslint": "^1.18.0",
-    "@goatjs/ts-unused-exports": "^1.37.0",
-    "@goatjs/typescript-config": "^1.37.0",
-    "@tailwindcss/postcss": "^4.1.16",
-    "@types/node": "^24.9.2",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
-    "babel-plugin-react-compiler": "0.0.0-experimental-bbe35c6-20251029",
-    "eslint": "^9.38.0",
+    "@goatjs/dbz": "^1.45.0",
+    "@goatjs/nextjs-eslint": "^1.26.0",
+    "@goatjs/ts-unused-exports": "^1.45.0",
+    "@goatjs/typescript-config": "^1.45.0",
+    "@tailwindcss/postcss": "^4.1.17",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vanilla-extract/next-plugin": "^2.4.16",
+    "babel-plugin-react-compiler": "0.0.0-experimental-b3d37cf-20251205",
+    "eslint": "^9.39.1",
     "postcss": "^8.5.6",
     "postcss-load-config": "^6.0.1",
-    "prettier": "^3.6.2",
-    "tailwindcss": "4.1.16",
+    "prettier": "^3.7.4",
+    "tailwindcss": "4.1.17",
     "typescript": "5.9.3",
-    "vercel": "^48.7.1"
+    "vercel": "^49.1.1"
   },
-  "packageManager": "yarn@4.10.3+sha512.c38cafb5c7bb273f3926d04e55e1d8c9dfa7d9c3ea1f36a4868fa028b9e5f72298f0b7f401ad5eb921749eb012eb1c3bb74bf7503df3ee43fd600d14a018266f"
+  "packageManager": "yarn@4.12.0+sha512.f45ab632439a67f8bc759bf32ead036a1f413287b9042726b7cc4818b7b49e14e9423ba49b18f9e06ea4941c1ad062385b1d8760a8d5091a1a31e5f6219afca8"
 }

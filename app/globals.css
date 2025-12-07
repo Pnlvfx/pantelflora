@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@import '../node_modules/@coraline-ui/core/assets/css/ui';
+@source '../node_modules/@coraline-ui';
 
 @utility no-scrollbar {
   -ms-overflow-style: none;

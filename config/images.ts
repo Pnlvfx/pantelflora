@@ -45,4 +45,5 @@ export const catalogueImages = [
 ] as const;
 
 const vivaioContents = await fs.readdir(path.join(publicPath, '/vivaio'));
+// eslint-disable-next-line unicorn/no-array-reverse
 export const vivaioImages = vivaioContents.map((name) => `/vivaio/${name}` as const).reverse();

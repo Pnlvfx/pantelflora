@@ -1,9 +1,10 @@
 import { NavBar } from '@/components/nav/nav-bar';
 import { address, cellNum, tellNum } from '@/config/constants';
+import { Fragment } from 'react/jsx-runtime';
 
 const Page = () => {
   return (
-    <>
+    <Fragment>
       <NavBar activeRoute="contacts" />
       <div className="pt-5 pb-[30px]">
         <div className="pr-6 pb-[30px] pl-2.5">
@@ -38,9 +39,10 @@ const Page = () => {
               </span>
             </span>
           </div>
+          {/* <ContactForm /> */}
         </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 

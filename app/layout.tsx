@@ -1,3 +1,4 @@
+import '@coraline-ui/core/styles/theme.css';
 import './globals.css';
 import type { ReactNode } from 'react';
 import type { Metadata, Viewport } from 'next';
@@ -76,7 +77,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { readonly children: ReactNode }) => {
   return (
-    <html lang="it">
+    <html dir="ltr" lang="it">
       <body className="bg-white text-black">
         <div className="max-w-7xl md:mx-auto mb-[25px]">
           <div className="min-h-screen">
